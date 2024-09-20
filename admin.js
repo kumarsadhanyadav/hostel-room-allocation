@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p><strong>Room Type:</strong> ${student.roomType}</p>
                 <p><strong>Preferences:</strong> ${student.preferences}</p>
                 <p><strong>Proximity to Academic Buildings:</strong> ${student.proximity}</p>
+                <p><strong>Allocated Room Number:</strong> ${student.roomNumber}</p>
                 <hr>
             `;
             studentDataContainer.appendChild(studentDiv);
