@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup - Hostel Room Allocation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hostel Room Allocation System</h1>
+
+        <div class="role-selection">
+            <h2>Select Your Role</h2>
+            <button class="role-btn" id="adminRole">Admin</button>
+            <button class="role-btn" id="studentRole">Student</button>
+        </div>
+
+        <div id="form-container" class="hidden">
+            <h2 id="formTitle">Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Login</button>
+                <p>Don't have an account? <a href="#" id="signupLink">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

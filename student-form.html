@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Room Preferences Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Your Room Preferences</h1>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" required>
+                    <option value="">Select Room Type</option>
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Dormitory">Dormitory</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="preferences">Room Preferences (e.g., Near library, Ground floor):</label>
+                <textarea id="preferences" rows="4" placeholder="Enter your preferences" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="proximity">Preferred Proximity to Academic Buildings:</label>
+                <select id="proximity" required>
+                    <option value="">Select proximity</option>
+                    <option value="Very Close">Very Close</option>
+                    <option value="Close">Close</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Far">Far</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit Preferences</button>
+        </form>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>
